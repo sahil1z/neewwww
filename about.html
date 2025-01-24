@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <!-- Adding Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #28a745; /* Green background */
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header .logo h1 {
+            margin: 0;
+        }
+
+        section {
+            padding: 40px 20px;
+        }
+
+        .about {
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+
+        .about h2 {
+            color: #28a745; /* Green color for headings */
+        }
+
+        .about h3 {
+            color: #333;
+            margin-top: 20px;
+        }
+
+        .about p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .team {
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .team h2 {
+            color: #28a745;
+            margin-bottom: 40px;
+        }
+
+        .team-member {
+            margin-bottom: 30px;
+        }
+
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .team-member h4 {
+            color: #333;
+            margin: 10px 0;
+        }
+
+        footer {
+            background-color: #28a745; /* Green background */
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+        .nav-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(46, 125, 50, 0.9);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 5%;
+        }
+
+        nav .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--white);
+            display: flex;
+            align-items: center;
+            transition: transform 0.3s ease;
+        }
+
+        nav .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        nav .logo:hover {
+            transform: scale(1.05);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: var(--white);
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            position: relative;
+            font-weight: 500;
+            display: inline-block;
+        }
+
+        nav ul li a::before {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--white);
+            transition: width 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: var(--nav-hover);
+        }
+
+        nav ul li a:hover::before {
+            width: 100%;
+        }
+
+        nav ul li a.active {
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+
+<body>
+    
+    <header>
+        <div class="nav-container">
+            <nav>
+                <div class="logo">
+                    Rural Empowerment Hub
+                </div>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="tutorials.html">Tutorials</a></li>
+                    <li><a href="request.html">Request Aid</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+  
+<br><br><br><br>
+
+    <main>
+        <section class="about">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>We are a team of passionate individuals committed to providing the best services in the industry. With years of experience and a customer-centric approach, we strive to exceed expectations.</p>
+                
+                <h3>Our Mission</h3>
+                <p>Our mission is to deliver high-quality products and services that empower our clients to achieve their goals. We believe in innovation, integrity, and collaboration.</p>
+
+                <h3>Our Vision</h3>
+                <p>To be a global leader in our industry, continuously evolving to meet the needs of our customers and make a positive impact in the community.</p>
+            </div>
+        </section>
+
+        <section class="team">
+            <div class="container">
+                <h2>Meet Our Team</h2>
+
+                <div class="row justify-content-center">
+                    <div class="col-md-3 team-member text-center">
+                        <img src="krishna.jpg" alt="Team Member 1">
+                        <h4>Krishna Sharma</h4>
+                        <p>Back-End</p>
+                    </div>
+
+                    <div class="col-md-3 team-member text-center">
+                        <img src="yashh.jpg" alt="Team Member 2">
+                        <h4>Yash Darji</h4>
+                        <p>Back-End</p>
+                    </div>
+
+                    <div class="col-md-3 team-member text-center">
+                        <img src="sahil.jpg" alt="Team Member 3">
+                        <h4>Sahil Mistry</h4>
+                        <p>Front-End</p>
+                    </div>
+
+                    <div class="col-md-3 team-member text-center">
+                        <img src="Jatin.jpg" alt="Team Member 4">
+                        <h4>Jatin Gori</h4>
+                        <p>Front-End</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Our Company. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Adding Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

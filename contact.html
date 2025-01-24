@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #e9f7ef; /* Light green background */
+            color: #155724; /* Dark green text */
+        }
+        .contact-container {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #d4edda; /* Greenish background for the form */
+            border: 1px solid #c3e6cb; /* Border matching the green theme */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .btn-green {
+            background-color: #28a745; /* Green button */
+            color: white;
+        }
+        .btn-green:hover {
+            background-color: #218838;
+        }
+
+   
+    .nav-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: rgba(46, 125, 50, 0.9);
+        backdrop-filter: blur(10px);
+        z-index: 1000;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 1rem 5%;
+    }
+
+    nav .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: var(--white);
+        display: flex;
+        align-items: center;
+        transition: transform 0.3s ease;
+    }
+
+    nav .logo img {
+        height: 40px;
+        margin-right: 10px;
+    }
+
+    nav .logo:hover {
+        transform: scale(1.05);
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        white-space: nowrap; /* Prevent text wrapping */
+    }
+
+    nav ul li {
+        margin-left: 20px;
+    }
+
+    nav ul li a {
+        color: var(--white);
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+        position: relative;
+        font-weight: 500;
+        display: inline-block;
+    }
+
+    nav ul li a::before {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: var(--white);
+        transition: width 0.3s ease;
+    }
+
+    nav ul li a:hover {
+        background-color: var(--nav-hover);
+    }
+
+    nav ul li a:hover::before {
+        width: 100%;
+    }
+
+    nav ul li a.active {
+        font-weight: bold;
+    }
+
+    .team {
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .team h2 {
+            color: #28a745;
+            margin-bottom: 40px;
+        }
+
+        .team-member {
+            margin-bottom: 30px;
+        }
+
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .team-member h4 {
+            color: #333;
+            margin: 10px 0;
+        }
+        section {
+            padding: 40px 20px;
+        }
+</style>
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container"><br><br><br><br><br><br><br><br><
+        <div class="row justify-content-center">
+            <div class="col-md-9">
+                <div class="contact-container">
+                    <h2 class="text-center">Contact Us</h2>
+                    <p class="text-center">We’re here to help you recover and thrive! Send us a message.</p>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Sweet Recovery Message</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Write your message here..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-green btn-block">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="nav-container">
+        <nav>
+            <div class="logo">
+                Rural Empowerment Hub
+            </div>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="tutorials.html">Tutorials</a></li>
+                <li><a href="request.html">Request Aid</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            
+        </nav>
+    </div>
+
+
+   
+
+<br><br><br><br><br><br><br><br>
+
+<section class="team">
+    <div class="container">
+        <h2 class="text-center">Contact Our Team</h2><br><br>
+
+        <div class="row justify-content-center">
+            <div class="col-12 team-member text-center">
+                <img src="krishna.jpg" alt="Krishna Sharma" class="img-fluid">
+                <h4>Krishna Sharma</h4>
+                <p>7705016317</p>
+            </div>
+
+            <div class="col-12 team-member text-center">
+                <img src="yashh.jpg" alt="Yash Darji" class="img-fluid">
+                <h4>Yash Darji</h4>
+                <p>9960451586</p>
+            </div>
+
+            <div class="col-12 team-member text-center">
+                <img src="sahil.jpg" alt="Sahil Mistry" class="img-fluid">
+                <h4>Sahil Mistry</h4>
+                <p>9619036623</p>
+            </div>
+
+            <div class="col-12 team-member text-center">
+                <img src="Jatin.jpg" alt="Jatin Gori" class="img-fluid">
+                <h4>Jatin Gori</h4>
+                <p>8247829482</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    </main>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
